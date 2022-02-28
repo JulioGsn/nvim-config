@@ -7,8 +7,8 @@ keymap('', '<Space>', '<Nop>', opts)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Open explorer or tree
-keymap('n', '<leader>o', ':NvimTreeToggle<Cr>', opts)
+-- NerdTree
+keymap('n', '<C-o>', ':NERDTreeToggle<Cr>', opts)
 
 -- Navigation in split terminal
 keymap('n', '<C-h>', '<C-w>h', opts)
