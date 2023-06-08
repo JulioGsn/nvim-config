@@ -18,4 +18,5 @@ return require('packer').startup(function(use)
   }
   use('ThePrimeagen/harpoon')
   -- use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use('tpope/vim-fugitive')
 end)
