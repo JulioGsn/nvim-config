@@ -29,13 +29,9 @@ cmp.setup({
     ['<C-f>'] = cmp_action.luasnip_jump_forward(),
     ['<C-b>'] = cmp_action.luasnip_jump_backward(),
 
-	["<Tab>"] = cmp.mapping(function(fallback)
+	['<Tab>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-          elseif luasnip.expand_or_locally_jumpable() then
-            luasnip.expand_or_jump()
-          --elseif has_words_before() then
-            --cmp.complete()
           else
             fallback()
           end
