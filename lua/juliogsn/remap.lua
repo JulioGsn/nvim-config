@@ -1,5 +1,9 @@
 -- Map 'kj' to <Esc> in insert mode
 vim.keymap.set('i', 'kj', '<Esc>', { noremap = true })
+vim.keymap.set('i', 'df', '<Esc>', { noremap = true })
+
+-- redo
+vim.keymap.set('n', '<leader>u', ':redo<CR>', { noremap = true })
 
 -- Define space as a leader key
 vim.keymap.set('', '<Space>', '<Nop>', { silent = true })
@@ -23,3 +27,6 @@ vim.keymap.set("n", "<leader>y", "\"+Y")
 
 -- Map <Leader>v to paste from clipboard
 vim.keymap.set('n', '<Leader>p', '"+p', { noremap = true, silent = true })
+
+vim.keymap.set('n', 'dss', "ci'", { noremap = true, silent = true })
+vim.keymap.set('n', 'dsd', 'ci"', { noremap = true, silent = true })
