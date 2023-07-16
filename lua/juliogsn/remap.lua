@@ -18,7 +18,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- greatest remap ever
-vim.keymap.set("x", "<leader>p", "\"_dp")
+vim.keymap.set("x", "<leader>v", "\"_dp")
 
 -- next greatest remap ever 
 vim.keymap.set("n", "<leader>y", "\"+y")
@@ -28,5 +28,5 @@ vim.keymap.set("n", "<leader>y", "\"+Y")
 -- Map <Leader>v to paste from clipboard
 vim.keymap.set('n', '<Leader>p', '"+p', { noremap = true, silent = true })
 
-vim.keymap.set('n', 'dss', "ci'", { noremap = true, silent = true })
-vim.keymap.set('n', 'dsd', 'ci"', { noremap = true, silent = true })
+vim.keymap.set('v', "J", ":m '>+1<CR>gv=gv");
+vim.keymap.set('v', "K", ":m '>-2<CR>gv=gv");

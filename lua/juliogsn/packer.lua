@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
 		run = ':TSUpdate'
 	}
 	use('ThePrimeagen/harpoon')
-	-- use({ 'rose-pine/neovim', as = 'rose-pine' })
+	use({ 'rose-pine/neovim', as = 'rose-pine' })
 	use('tpope/vim-fugitive')
 	use {
 		'VonHeikemen/lsp-zero.nvim',
