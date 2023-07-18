@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
 	use('ThePrimeagen/harpoon')
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
 	use('tpope/vim-fugitive')
+    use "rebelot/kanagawa.nvim"
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v2.x',
