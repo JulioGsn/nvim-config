@@ -10,7 +10,11 @@ vim.keymap.set('', '<Space>', '<Nop>', { silent = true })
 
 vim.g.mapleader = ' '
 
+-- vim.keymap.set("n", "<leader>e", ":Lex<cr>:vertical resize 35<cr>")
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.keymap.set("n", "<C-Left>", vim.cmd.tabprevious)
+vim.keymap.set("n", "<C-Right>", vim.cmd.tabnext)
+vim.keymap.set("n", "<leader>s", vim.cmd.vsplit)
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
