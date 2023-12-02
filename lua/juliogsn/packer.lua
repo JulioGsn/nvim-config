@@ -37,7 +37,10 @@ return require('packer').startup(function(use)
 		{'hrsh7th/nvim-cmp'},     -- Required
 		{'hrsh7th/cmp-nvim-lsp'}, -- Required
 		{'L3MON4D3/LuaSnip'},     -- Required
-	}
+	},
+    use "lukas-reineke/lsp-format.nvim",
+
+    use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
 }
 
 end)
